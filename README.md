@@ -1,6 +1,6 @@
 Velocimeter
 -----------------
-//TODO badges
+[ ![Download](https://api.bintray.com/packages/glomadrian/maven/velocimeterlibrary/images/download.svg) ](https://bintray.com/glomadrian/maven/velocimeterlibrary/_latestVersion)
 
 A velocimeter View for Android
 
@@ -80,7 +80,7 @@ repositories {
 ```
 Add dependency
 ```groovy
-compile 'com.github.glomadrian:velocimeter-view:1.0@aar'
+compile 'com.github.glomadrian:velocimeterlibrary:1.0@aar'
 ```
 Developed By
 ------------
