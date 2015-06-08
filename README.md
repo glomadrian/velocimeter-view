@@ -1,5 +1,7 @@
 Velocimeter
 -----------------
+[![Build Status](https://travis-ci.org/glomadrian/velocimeter-view.svg)](https://travis-ci.org/glomadrian/velocimeter-view)
+
 [ ![Download](https://api.bintray.com/packages/glomadrian/maven/velocimeterlibrary/images/download.svg) ](https://bintray.com/glomadrian/maven/velocimeterlibrary/_latestVersion)
 
 A velocimeter View for Android
