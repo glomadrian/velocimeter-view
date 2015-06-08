@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="inside_progress">#ff6c4d70</color>
+  <color name="external_progress">#9C27B0</color>
+  <color name="bottom_velocimeter">#e515171d</color>
+  <color name="internal_velocimeter">#ffb4b4b4</color>
+  <color name="needle">#6200EA</color>
+  <color name="digital_number">#ffdcefff</color>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="VelocimeterView">
+    <attr name="inside_progress_color"
+        format="color"/>
+    <attr name="external_progress_color"
+        format="color"/>
+    <attr name="progress_blur_color"
+        format="color"/>
+    <attr name="bottom_velocimeter_color"
+        format="color"/>
+    <attr name="internal_velocimeter_color"
+        format="color"/>
+    <attr name="needle_color"
+        format="color"/>
+    <attr name="needle_blur_color"
+        format="color"/>
+    <attr name="digital_number_color"
+        format="color"/>
+    <attr name="digital_number_blur_color"
+        format="color"/>
+    <attr name="max"
+        format="integer"/>
+    <attr name="units"
+        format="string"/>
+
+  </declare-styleable>
+</resources>
