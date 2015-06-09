@@ -57,6 +57,7 @@ public class VelocimeterView extends View {
   private int externalProgressColor = Color.parseColor("#9cfa1d");
   private int progressBlurColor = Color.parseColor("#44ff2b");
   private int bottomVelocimeterColor = Color.parseColor("#1E1E1E");
+  private boolean showBottomVelocimeter = true;
   private int internalVelocimeterColor = Color.WHITE;
   private int needdleColor = Color.RED;
   private int needleBlurColor = Color.RED;
@@ -144,6 +145,9 @@ public class VelocimeterView extends View {
     bottomVelocimeterColor =
         attributes.getColor(R.styleable.VelocimeterView_bottom_velocimeter_color,
             bottomVelocimeterColor);
+    showBottomVelocimeter =
+        attributes.getBoolean(R.styleable.VelocimeterView_show_bottom_bar,
+                showBottomVelocimeter);
     internalVelocimeterColor =
         attributes.getColor(R.styleable.VelocimeterView_internal_velocimeter_color,
             internalVelocimeterColor);
@@ -173,7 +177,9 @@ public class VelocimeterView extends View {
     insideVelocimeterMarkerPainter.draw(canvas);
     linePainter.draw(canvas);
     blurLinePainter.draw(canvas);
-    bottomVelocimeterPainter.draw(canvas);
+    if (showBottomVelocimeter) {
+      bottomVelocimeterPainter.draw(canvas);
+    }
     invalidate();
   }
 
