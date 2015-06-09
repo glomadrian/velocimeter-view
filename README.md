@@ -50,6 +50,7 @@ With custom colors and attributes
         app:needle_blur_color="@color/needle"
         app:digital_number_color="@color/digital_number"
         app:digital_number_blur_color="@color/digital_number"
+        app:show_bottom_bar="false"
         app:max="100"
         app:units="kmh"
         />
