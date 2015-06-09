@@ -1,6 +1,9 @@
 Velocimeter
 -----------------
-[![Build Status](https://travis-ci.org/glomadrian/velocimeter-view.svg)](https://travis-ci.org/glomadrian/velocimeter-view) [ ![Download](https://api.bintray.com/packages/glomadrian/maven/velocimeterlibrary/images/download.svg) ](https://bintray.com/glomadrian/maven/velocimeterlibrary/_latestVersion)
+[![Build Status](https://travis-ci.org/glomadrian/velocimeter-view.svg)](https://travis-ci.org/glomadrian/velocimeter-view)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Velocimeter-green.svg?style=flat)](https://android-arsenal.com/details/1/1956)
+[
+![Download](https://api.bintray.com/packages/glomadrian/maven/velocimeterlibrary/images/download.svg) ](https://bintray.com/glomadrian/maven/velocimeterlibrary/_latestVersion)
 
 A velocimeter View for Android
 
