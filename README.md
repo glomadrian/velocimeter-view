@@ -79,7 +79,7 @@ repositories {
 ```
 Add dependency
 ```groovy
-compile 'com.github.glomadrian:velocimeterlibrary:1.0@aar'
+compile 'com.github.glomadrian:velocimeterlibrary:1.1@aar'
 ```
 Developed By
 ------------
