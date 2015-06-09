@@ -29,9 +29,8 @@ Default colors
 <com.github.glomadrian.velocimeterlibrary.VelocimeterView
        android:layout_gravity="center"
        android:id="@+id/velocimeter"
-       android:layout_width="match_parent"
-       android:layout_height="0dp"
-       android:layout_weight="1"
+       android:layout_width="250dp"
+       android:layout_height="250dp"
        />
 ```
 
@@ -39,10 +38,9 @@ With custom colors and attributes
 ```xml
 <com.github.glomadrian.velocimeterlibrary.VelocimeterView
         android:layout_gravity="center"
-        android:id="@+id/velocimeter2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:id="@+id/velocimeter"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         app:inside_progress_color="@color/inside_progress"
         app:external_progress_color="@color/external_progress"
         app:progress_blur_color="@color/external_progress"
