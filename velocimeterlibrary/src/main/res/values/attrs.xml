@@ -23,6 +23,8 @@
         format="integer"/>
     <attr name="units"
         format="string"/>
+    <attr name="show_bottom_bar"
+        format="boolean"/>
 
   </declare-styleable>
 </resources>
