@@ -1,3 +1,5 @@
+[![Android Gems](http://www.android-gems.com/badge/glomadrian/velocimeter-view.svg?branch=master)](http://www.android-gems.com/lib/glomadrian/velocimeter-view)
+
 Velocimeter
 -----------------
 [![Build Status](https://travis-ci.org/glomadrian/velocimeter-view.svg)](https://travis-ci.org/glomadrian/velocimeter-view)
