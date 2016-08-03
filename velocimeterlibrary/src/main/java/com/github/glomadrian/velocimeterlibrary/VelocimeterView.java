@@ -108,31 +108,33 @@ public class VelocimeterView extends View {
     TypedArray attributes =
         context.obtainStyledAttributes(attributeSet, R.styleable.VelocimeterView);
     initAttributes(attributes);
-
-    int marginPixels = DimensionUtils.getSizeInPixels(margin, getContext());
     setLayerType(LAYER_TYPE_SOFTWARE, null);
+    initPainters();
+    initValueAnimator();
+  }
+
+  private void initPainters() {
+    int marginPixels = DimensionUtils.getSizeInPixels(margin, getContext());
     linePainter = new NeedlePainterImp(needdleColor, max, getContext());
     blurLinePainter = new LineBlurPainter(needleBlurColor, max, getContext());
     internalVelocimeterPainter =
-        new InternalVelocimeterPainterImp(insideProgressColor, marginPixels, getContext());
+            new InternalVelocimeterPainterImp(insideProgressColor, marginPixels, getContext());
     progressVelocimeterPainter =
-        new ProgressVelocimeterPainterImp(externalProgressColor, max, marginPixels, getContext());
+            new ProgressVelocimeterPainterImp(externalProgressColor, max, marginPixels, getContext());
     insideVelocimeterPainter =
-        new InsideVelocimeterPainterImp(internalVelocimeterColor, getContext());
+            new InsideVelocimeterPainterImp(internalVelocimeterColor, getContext());
     insideVelocimeterMarkerPainter =
-        new InsideVelocimeterMarkerPainterImp(internalVelocimeterColor, getContext());
+            new InsideVelocimeterMarkerPainterImp(internalVelocimeterColor, getContext());
     blurProgressVelocimeterPainter =
-        new BlurProgressVelocimeterPainter(progressBlurColor, max, marginPixels, getContext());
-    initValueAnimator();
-
+            new BlurProgressVelocimeterPainter(progressBlurColor, max, marginPixels, getContext());
     digitalPainter = new DigitalImp(digitalNumberColor, getContext(),
-        DimensionUtils.getSizeInPixels(45, context), DimensionUtils.getSizeInPixels(25, context),
-        units);
+            DimensionUtils.getSizeInPixels(45, getContext()), DimensionUtils.getSizeInPixels(25, getContext()),
+            units);
     digitalBlurPainter = new DigitalBlurImp(digitalNumberBlurColor, getContext(),
-        DimensionUtils.getSizeInPixels(45, context), DimensionUtils.getSizeInPixels(25, context),
-        units);
+            DimensionUtils.getSizeInPixels(45, getContext()), DimensionUtils.getSizeInPixels(25, getContext()),
+            units);
     bottomVelocimeterPainter =
-        new BottomVelocimeterPainterImp(bottomVelocimeterColor, marginPixels, getContext());
+            new BottomVelocimeterPainterImp(bottomVelocimeterColor, marginPixels, getContext());
   }
 
   private void initAttributes(TypedArray attributes) {
@@ -236,6 +238,7 @@ public class VelocimeterView extends View {
 
   public void setMax(int max) {
     this.max = max;
+    initPainters();
   }
 
   private void updateValueProgress(float value) {
