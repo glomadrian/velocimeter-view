@@ -17,13 +17,14 @@ public class MainActivity extends AppCompatActivity {
     seek = (SeekBar) findViewById(R.id.seek);
     seek.setOnSeekBarChangeListener(new SeekListener());
     velocimeter = (VelocimeterView) findViewById(R.id.velocimeter);
+    velocimeter.setMax(500);
     velocimeter2 = (VelocimeterView) findViewById(R.id.velocimeter2);
   }
 
   private class SeekListener implements SeekBar.OnSeekBarChangeListener {
 
     @Override public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-      velocimeter.setValue(progress, true);
+      velocimeter.setValue(progress*2, true);
       velocimeter2.setValue(progress, true);
     }
 
